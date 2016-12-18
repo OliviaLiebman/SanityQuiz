@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type"text/css" href="buzfeed_quiz.css">
+</head>
+<body>
+<h3 class="title" >Welcome to <br> "How Sane are You?"</h3>
+<label class="Question" for="name">What is your name? </label>
+<input type="text" id="name" placeholder="Jane Doe"/>
+</br>
+
+<div class="Question">
+    <h4>How many times a day to you talk to yourself?</h4>
+    <input type = "checkbox" class="Q1" value="1" onclick="checkChecked(this)" id="check1"> 0 times a day. <br>
+    <input type = "checkbox" class="Q1" value="2" onclick="checkChecked(this)" id="check2"> 1-2 times a day. <br>
+    <input type = "checkbox" class="Q1" value="3" onclick="checkChecked(this)" id="check3"> 2-3 times a day. <br>
+    <input type = "checkbox" class="Q1" value="4" onclick="checkChecked(this)" id="check4"> 4+ times a day. <br>
+    <button onclick="Q1clicked()">submit</button>
+</div>
+
+<div class="Question">
+<h4>How many imaginary friends do you have?</h4>    
+<select id="Q2">
+    <option value="1" class="Q2">0</option>
+    <option value="2" class="Q2">1 or 2 or 7...</option>
+    <option value="3" class="Q2">I have a variety of animal and human friends, who may or may not exist in the physical realm.</option>
+    <option value="4" class="Q2">We live in a simulation, all my friends only exist in this sim. Invalid question.</option>
+</select>
+    <button onclick="Q2clicked()">submit</button>
+</div>
+
+<div class="Question">
+<h4>If your printer doesn't work the first try, how many times do you try to print again before checking what may be wrong?</h4>
+    <input type="radio" name="radioQ" class="Q3" value="1"> 0 <br>
+    <input type="radio" name="radioQ" class="Q3" value="2"> A couple times, you never know <br>
+    <input type="radio" name="radioQ" class="Q3" value="3"> 4 or 7 or 13 or something in that ballpark <br>
+    <input type="radio" name="radioQ" class="Q3" value="4"> !!As many times as it takes!! <br>
+    <button onclick="Q3clicked()">submit</button>
+</div>
+
+<div class="buttonQ Question">
+<h4>What is your favourite fruit?</h4>
+    <input type="button" class="Q4" value="Blueberries" id="1" onclick="Q4clicked(this.id)">
+    <input type="button" class="Q4" value="I enjoy many different fruits" id="2" onclick="Q4clicked(this.id)">
+    <input type="button" class="Q4" value="Kiwano (the African horned melon, of course)" id="3" onclick="Q4clicked(this.id)">
+    <input type="button" class="Q4" value="I don't eat fruit, because it feels like I'm eating flesh...but I'm not a vegetarian" id="4" onclick="Q4clicked(this.id)">
+</div>
+
+<div class="Question">
+<h4>One a scale of one to 4, how much do you enjoy horror films? 1 not at all, 4 being very much</h4>
+    <input type="number" class="Q5" name="quantity" id="answer5" min="1" max="4">
+    <input type="submit" onclick="Q5clicked()"> <br>
+</div>
+<br>
+    <input type="submit" onclick="finalSubmit()"> Submit when quiz is complete <br>
+
+    <script src="buzzfeed_quiz.js"></script>
+<div class="outcome" id="finalOutcome">
+</div>
+
+</body>
+</html>
