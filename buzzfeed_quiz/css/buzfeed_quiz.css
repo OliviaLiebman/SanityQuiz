@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Poiret+One');
+.welcome {
+	border: 2px dotted black;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 10px;
+}
 
 .title {
 	font-family: 'Cinzel', serif;
@@ -6,10 +12,6 @@
 	text-align: center;
 }
 .Question {
-	font-family: 'Poiret One', cursive;
-	font-size: 20px;
-}
-.outcome {
 	font-family: 'Poiret One', cursive;
 	font-size: 20px;
 }

@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type"text/css" href="buzfeed_quiz.css">
+    <link rel="stylesheet" type="text/css" href="buzfeed_quiz.css">
+    <title>Buzz feed quiz </title>
 </head>
 <body>
-<h3 class="title" >Welcome to <br> "How Sane are You?"</h3>
+<div class="welcome">
+    <h3 class="title" >Welcome to <br> "How Sane are You?"</h3>
+
 <label class="Question" for="name">What is your name? </label>
 <input type="text" id="name" placeholder="Jane Doe"/>
-</br>
+<br>
 
 <div class="Question">
     <h4>How many times a day to you talk to yourself?</h4>
@@ -18,7 +21,6 @@
     <input type = "checkbox" class="Q1" value="2" onclick="checkChecked(this)" id="check2"> 1-2 times a day. <br>
     <input type = "checkbox" class="Q1" value="3" onclick="checkChecked(this)" id="check3"> 2-3 times a day. <br>
     <input type = "checkbox" class="Q1" value="4" onclick="checkChecked(this)" id="check4"> 4+ times a day. <br>
-    <button onclick="Q1clicked()">submit</button>
 </div>
 
 <div class="Question">
@@ -29,7 +31,6 @@
     <option value="3" class="Q2">I have a variety of animal and human friends, who may or may not exist in the physical realm.</option>
     <option value="4" class="Q2">We live in a simulation, all my friends only exist in this sim. Invalid question.</option>
 </select>
-    <button onclick="Q2clicked()">submit</button>
 </div>
 
 <div class="Question">
@@ -38,8 +39,7 @@
     <input type="radio" name="radioQ" class="Q3" value="2"> A couple times, you never know <br>
     <input type="radio" name="radioQ" class="Q3" value="3"> 4 or 7 or 13 or something in that ballpark <br>
     <input type="radio" name="radioQ" class="Q3" value="4"> !!As many times as it takes!! <br>
-    <button onclick="Q3clicked()">submit</button>
-</div>
+<div>
 
 <div class="buttonQ Question">
 <h4>What is your favourite fruit?</h4>
@@ -50,15 +50,13 @@
 </div>
 
 <div class="Question">
-<h4>One a scale of one to 4, how much do you enjoy horror films? 1 not at all, 4 being very much</h4>
+<h4>One a scale of one to 4, how much do you enjoy horror films? 1 being not at all, 4 being very much</h4>
     <input type="number" class="Q5" name="quantity" id="answer5" min="1" max="4">
-    <input type="submit" onclick="Q5clicked()"> <br>
+    <input type="submit" onclick="finalSubmit()"> <br>
 </div>
 <br>
-    <input type="submit" onclick="finalSubmit()"> Submit when quiz is complete <br>
 
-    <script src="buzzfeed_quiz.js"></script>
-<div class="outcome" id="finalOutcome">
+<script src="buzzfeed_quiz.js"></script>
 </div>
 
 </body>
